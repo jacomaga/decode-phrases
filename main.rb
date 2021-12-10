@@ -50,7 +50,3 @@ def count_phrase(phrase)
     return phrase_count
 end
 
-puts mess_word('bala', 10)
-# puts count_character('bala', 'f')
-# puts count_phrase('bala')
-# puts ['12123', ['2312', 2]]
