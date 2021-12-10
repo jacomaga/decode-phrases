@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "ruby-debug",
+            "request": "launch",
+            "name": "RSpec",
+            "program": "rspec",
+            "programArgs": [
+                "${workspaceFolder}"
+            ],
+            "useBundler": false
+        },
+    {
+        "type": "ruby-debug",
+        "request": "launch",
+        "name": "main.rb",
+        "program": "${workspaceFolder}/${command:AskForProgramName}",
+        "programArgs": [],
+        "useBundler": false
+    }
+    ]
+}
