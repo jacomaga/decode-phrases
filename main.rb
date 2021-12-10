@@ -2,7 +2,6 @@ def mess_word(phrase, combinations)
     phrases = []
     phrase_form = count_phrase(phrase)
 
-
     while(combinations > 0 )
         new_phrase = []
         used_index = []
@@ -50,7 +49,9 @@ def count_phrase(phrase)
     return phrase_count
 end
 
-puts mess_word('bala', 10)
-# puts count_character('bala', 'f')
-# puts count_phrase('bala')
-# puts ['12123', ['2312', 2]]
+puts "Enter the word or phrase to mess up: "
+word = gets.chomp
+puts "Enter the number of combinations that you want to generate: "
+combinations = gets.chomp.to_i
+
+puts mess_word(word, combinations)
